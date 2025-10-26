@@ -254,8 +254,8 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     color: #e74c3c;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -291,4 +291,5 @@ footer a:hover {
         gap: 5px;
     }
 }
+
 
