@@ -254,17 +254,17 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 26px;          /* стало меньше */
+    height: 26px;
     color: #e74c3c;
-    border-radius: 50%;
     transition: all 0.3s ease;
     text-decoration: none;
+    margin-left: 4px;     /* лёгкий отступ от текста */
 }
 
 .compass-icon svg {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 .compass-icon:hover {
@@ -291,3 +291,4 @@ footer a:hover {
         gap: 5px;
     }
 }
+
