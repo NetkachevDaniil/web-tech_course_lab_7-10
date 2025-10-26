@@ -1,4 +1,4 @@
-// loadDishes.js - функция для загрузки данных с API (исправленная версия)
+// loadDishes.js - функция для загрузки данных с API
 const apiKey = '3926b07f-7ce7-4d7b-a716-3f472e11282f';
 const API_BASE = 'https://edu.std-900.ist.mospolytech.ru/labs/api';
 let dishes = [];
@@ -33,6 +33,7 @@ async function initDishes() {
         }
         
         return {
+            id: dish.id,
             keyword: dish.keyword,
             name: dish.name,
             price: dish.price,
@@ -62,6 +63,14 @@ async function initDishes() {
     // Обновляем отображение заказа если нужно
     if (typeof window.updateOrderDisplay === 'function') {
         window.updateOrderDisplay();
+    }
+    
+    if (typeof window.updateOrderPanel === 'function') {
+        window.updateOrderPanel();
+    }
+    
+    if (typeof window.updateDishButtons === 'function') {
+        window.updateDishButtons();
     }
 }
 
