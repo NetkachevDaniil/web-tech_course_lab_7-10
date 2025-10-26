@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Tour — доставка полезных и вкусных бизнес-ланчей в Москве</title>
+    <title>Food Tour — Собрать ланч</title>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
@@ -12,22 +12,11 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-section">
-                    <h1>Food Tour</h1>
-                    <a href="landing.html" class="compass-icon" title="Перейти на главную">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <!-- Внешний круг -->
-            <circle cx="12" cy="12" r="9"/>
-            <!-- Двусторонняя стрелка -->
-            <polygon points="12,5 14.5,12 12,11 9.5,12"/>
-            <polygon points="12,19 9.5,12 12,13 14.5,12"/>
-        </svg>
-                    </a>
-                </div>
+                <h1>Food Tour</h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html" id="active">О нас</a></li>
-                        <li><a href="menu.html">Собрать ланч</a></li>
+                        <li><a href="index.html">О нас</a></li>
+                        <li><a href="menu.html" id="active">Собрать ланч</a></li>
                         <li><a href="checkout.html">Оформить заказ</a></li>
                         <li><a href="orders.html">Мои заказы</a></li>
                         <li><a href="#contacts">Контакты</a></li>
@@ -37,73 +26,207 @@
         </div>
     </header>
 
-    <!-- остальной контент без изменений -->
     <main class="container">
-        <section id="about" class="about">
-            <h2>Ваш идеальный обед — всего в паре кликов</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Food Tour — это не просто доставка еды, а ваш надежный партнер в организации вкусного и полезного питания. Мы готовим свежие блюда из отборных продуктов и доставляем в ваш офис к точно назначенному времени. Забудьте о готовке — сосредоточьтесь на работе, пока мы заботимся о вашем обеде.</p>
+        <section id="available-combos">
+            <h2>Доступные для заказа комбо</h2>
+            <div class="combos-layout">
+                <div class="combo-row">
+                    <div class="combo-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/soup.png" alt="Суп" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Суп</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/main.png" alt="Главное блюдо" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Главное блюдо</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/salad.png" alt="Салат" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Салат</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/drink.png" alt="Напиток" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Напиток</span>
+                        </div>
+                    </div>
+
+                    <div class="combo-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/soup.png" alt="Суп" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Суп</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/main.png" alt="Главное блюдо" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Главное блюдо</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/drink.png" alt="Напиток" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Напиток</span>
+                        </div>
+                    </div>
+
+                    <div class="combo-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/soup.png" alt="Суп" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Суп</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/salad.png" alt="Салат" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Салат</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/drink.png" alt="Напиток" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Напиток</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://scdn.chibbis.ru/live/products/8a9a1a1ac3dc6c9353a78154aea1108a.jpeg" alt="Вкусный бизнес-ланч от Food Tour">
+
+                <div class="combo-row">
+                    <div class="combo-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/main.png" alt="Главное блюдо" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Главное блюдо</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/salad.png" alt="Салат" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Салат</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/drink.png" alt="Напиток" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Напиток</span>
+                        </div>
+                    </div>
+
+                    <div class="combo-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/main.png" alt="Главное блюдо" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Главное блюдо</span>
+                        </div>
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/drink.png" alt="Напиток" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Напиток</span>
+                        </div>
+                    </div>
+
+                    <div class="combo-set dessert-set">
+                        <div class="combo-item-vertical">
+                            <div class="combo-icon-wrapper">
+                                <img src="icons/desert.png" alt="Десерт" class="combo-icon">
+                            </div>
+                            <span class="combo-label">Десерт</span>
+                        </div>
+                        <p class="dessert-note">(Можно добавить к любому заказу)</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="advantages">
-            <h2>Почему выбирают именно нас?</h2>
-            <ul>
-                <li>Бесперебойная доставка: ваш обед прибудет точно к указанному времени.</li>
-                <li>Экологичная и надежная упаковка: блюда остаются горячими и аппетитными.</li>
-                <li>Широкий временной диапазон: доставляем с 7:00 до 23:00, чтобы подстроиться под ваш график.</li>
-            </ul>
+        <!-- Остальные секции остаются без изменений -->
+        <section id="soups">
+            <h2>Выберите суп</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-kind="all">Все</button>
+                <button class="filter-btn" data-kind="fish">рыбный</button>
+                <button class="filter-btn" data-kind="meat">мясной</button>
+                <button class="filter-btn" data-kind="veg">вегетарианский</button>
+            </div>
+            <div class="menu-container">
+                <!-- Блюда будут добавлены через JavaScript -->
+            </div>
         </section>
 
-        <section class="popular-dishes">
-            <h2>Фирменные хиты</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                         <th>Название блюда</th>
-                        <th>Популярность (заказов/неделю)</th>
-                        <th>Стоимость</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Стейк из лосося с овощами гриль</td>
-                        <td>210</td>
-                        <td>690 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Куриное карри с рисом басмати</td>
-                        <td>195</td>
-                        <td>490 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Салат с киноа и авокадо</td>
-                        <td>180</td>
-                        <td>390 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Паста с трюфельным кремом</td>
-                        <td>165</td>
-                        <td>420 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Говядина по-тайски с имбирным соусом</td>
-                        <td>150</td>
-                        <td>620 ₽</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="main-dishes">
+            <h2>Выберите главное блюдо</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-kind="all">Все</button>
+                <button class="filter-btn" data-kind="fish">рыбное</button>
+                <button class="filter-btn" data-kind="meat">мясное</button>
+                <button class="filter-btn" data-kind="veg">вегетарианское</button>
+            </div>
+            <div class="menu-container">
+                <!-- Блюда будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <section id="salads">
+            <h2>Выберите салат или стартер</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-kind="all">Все</button>
+                <button class="filter-btn" data-kind="fish">рыбный</button>
+                <button class="filter-btn" data-kind="meat">мясной</button>
+                <button class="filter-btn" data-kind="veg">вегетарианский</button>
+            </div>
+            <div class="menu-container">
+                <!-- Блюда будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <section id="drinks">
+            <h2>Выберите напиток</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-kind="all">Все</button>
+                <button class="filter-btn" data-kind="cold">холодный</button>
+                <button class="filter-btn" data-kind="hot">горячий</button>
+            </div>
+            <div class="menu-container">
+                <!-- Блюда будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <section id="desserts">
+            <h2>Выберите десерт</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-kind="all">Все</button>
+                <button class="filter-btn" data-kind="small">маленькая порция</button>
+                <button class="filter-btn" data-kind="medium">средняя порция</button>
+                <button class="filter-btn" data-kind="large">большая порция</button>
+            </div>
+            <div class="menu-container">
+                <!-- Блюда будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <!-- Панель оформления заказа -->
+        <section id="order-panel-section" style="display: none;">
+            <div class="order-panel">
+                <div class="order-panel-content">
+                    <div class="order-panel-total">
+                        <span>Стоимость заказа: </span>
+                        <strong id="order-panel-total-amount">0</strong>Р
+                    </div>
+                    <a href="checkout.html" id="checkout-link" class="checkout-link disabled">Перейти к оформлению</a>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -113,5 +236,50 @@
             <p>© 2025 Food Tour. Все права защищены.</p>
         </div>
     </footer>
+
+    <!-- Удаляем подключение dishes.js и добавляем loadDishes.js -->
+<script src="js/loadDishes.js"></script>
+<script src="js/displayDishes.js"></script>
+<script src="js/orderLogic.js"></script>
+<script src="js/comboValidation.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentsTextarea = document.getElementById('comments');
+        const charCount = document.getElementById('char-count');
+        
+        if (commentsTextarea && charCount) {
+            commentsTextarea.addEventListener('input', function() {
+                const currentLength = this.value.length;
+                charCount.textContent = currentLength;
+                
+                if (currentLength > 500) {
+                    this.value = this.value.substring(0, 500);
+                    charCount.textContent = 500;
+                }
+            });
+        }
+        
+        const resetBtn = document.querySelector('.reset-btn');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', function() {
+                window.selectedDishes = {
+                    soup: null,
+                    main: null,
+                    salad: null,
+                    drink: null,
+                    dessert: null
+                };
+                
+                if (typeof updateOrderDisplay === 'function') {
+                    updateOrderDisplay();
+                }
+                
+                document.getElementById('order-form').reset();
+                document.getElementById('char-count').textContent = '0';
+            });
+        }
+    });
+    </script>
 </body>
 </html>
